@@ -5,7 +5,7 @@ A Bitcoin command line tool that interacts with a full node via the p2p protocol
 **DISCLAIMER: this project is experimental and the code is not  production ready. DO NOT USE IN PRODUCTION!!!!**
 
 #### Usage Examples:
-####The "xpub" subcommand" 
+####The "xpub" subcommand:
 This sub-command deals with exposing the different features BIP32 hierarchical deterministic wallets. 
 ```
 ➜  btc-cli git:(development) ✗ cargo run xpub --action generate-from-seed --seed="000102030405060708090a0b0c0d0e0a"
@@ -14,7 +14,7 @@ This sub-command deals with exposing the different features BIP32 hierarchical d
 xpub661MyMwAqRbcF5SPUhJf73MNzHm1KXQr9q3oBpxTe9z6xt65VCo87sgMpKxMJPpa4jTDzyEncBPYFyHCQZdgzWf6Y5V6G7hhyvpJKWU2Qb5
 ```
 
-####The "network" subcommand"
+####The "network" subcommand:
 This sub-command enables the user to interact with a bitcoin node using the  p2p protocol
 ```
 ➜  btc-cli git:(development) ✗ cargo run network --action raw-message --node localhost:8333 --message "f9beb4d976657273696f6e000000000066000000be61b8277f1101000d04000000000000f00f4d5c00000000000000000000000000000000000000000000ffff5bf08c80b4bd0d04000000000000000000000000000000000000000000000000faa99559cc68a1c1102f5361746f7368693a302e31372e312f938c080001"
