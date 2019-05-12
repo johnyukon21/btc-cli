@@ -7,8 +7,8 @@ edition = "2018"
 [dependencies]
 clap = "2.26.0"
 hexdump = "0.1.0"
-bitcoin = { path = "../rust-bitcoin/" }
-#bitcoin = "0.18.0"
+#bitcoin = { path = "../rust-bitcoin/" }
+bitcoin = "0.18.0"
 
 [dependencies.hex]
 version = "=0.3.2"

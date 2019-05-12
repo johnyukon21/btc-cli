@@ -74,7 +74,6 @@ fn main() {
             let path = DerivationPath::from_str("m").unwrap();
             //TODO: take path from the command line
             let master_xpub = &pk.derive_pub(&secp, &path).unwrap().to_string()[..];
-            println!("{}", action);
             println!("{}", &master_xpub);
 
         }
