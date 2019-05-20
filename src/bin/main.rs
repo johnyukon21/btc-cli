@@ -106,7 +106,7 @@ fn main() {
 
     if let Some(matches) = matches.subcommand_matches("key-management") {
         let action = matches.value_of("action").unwrap();
-        if action == "generate-from-seed" {
+        if action == "generate-xpub-from-seed" {
             let secp = Secp256k1::new();
             let seed = hex_decode(matches.value_of("seed").unwrap()).unwrap();
 
@@ -120,8 +120,8 @@ fn main() {
 
             let xpub = &pk.derive_pub(&secp, &path).unwrap().to_string()[..];
             let public_key = &pk.public_key;
-            println!("{}", &xpub);
-            println!("{}", &public_key);
+            println!("xpub: {}", &xpub);
+            println!("public key: {}", &public_key);
 
         }
         else{
