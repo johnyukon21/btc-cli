@@ -7,11 +7,11 @@ edition = "2018"
 [dependencies]
 clap = "2.26.0"
 hexdump = "0.1.0"
-#bitcoin = { path = "../rust-bitcoin/" }
-bitcoin = "0.18.0"
-
-[dependencies.hex]
-version = "=0.3.2"
+rpassword = "0.0.4"
+bitcoin = { version = "0.18.0", path = "../rust-bitcoin/" }
+bitcoincore-rpc = { version = "0.6.0", path = "../rust-bitcoincore-rpc/client/" }
+hex = "0.3.2"
+jsonrpc = "0.11.0"
 
 [dependencies.secp256k1]
 version = "0.12"
