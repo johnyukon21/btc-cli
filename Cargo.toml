@@ -1,6 +1,6 @@
 [package]
 name = "btc-cli"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["johnyukon21 <johnyukon21@protonmail.com>"]
 edition = "2018"
 categories = ["command-line-utilities"]
