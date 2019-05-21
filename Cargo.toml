@@ -10,6 +10,10 @@ readme = "README.md"
 homepage = "https://github.com/johnyukon21/btc-cli"
 repository = "https://github.com/johnyukon21/btc-cli"
 
+[[bin]]
+path = "src/main.rs"
+name = "btc-cli"
+
 [dependencies]
 clap = "2.26.0"
 hexdump = "0.1.0"
