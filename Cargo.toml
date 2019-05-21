@@ -3,6 +3,12 @@ name = "btc-cli"
 version = "0.1.0"
 authors = ["johnyukon21 <johnyukon21@protonmail.com>"]
 edition = "2018"
+categories = ["command-line-utilities"]
+license = "CC0-1.0"
+description = "A bitcoin command line tool"
+readme = "README.md"
+homepage = "https://github.com/johnyukon21/btc-cli"
+repository = "https://github.com/johnyukon21/btc-cli"
 
 [dependencies]
 clap = "2.26.0"
